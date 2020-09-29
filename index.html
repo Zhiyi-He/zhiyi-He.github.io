@@ -256,9 +256,7 @@
 <li><p>定义一个model或者function set（Linear model线性模型 ）：</p>
 <p>$$<br>f = w * x + b = \sum^{}_{i}{w_i x_i}<br>$$</p>
 </li>
-<li><p>定义一个合适的loss function来评价model的好坏（最小二乘法）：<br>$$<br>\begin{equation}\begin{split}<br>L(f)&amp;=L(w, b) \</p>
-<pre><code>&amp;= \sum_&#123;n&#125;&#123;(f(x^n) - \hat&#123;y&#125;^n)^2&#125; \\</code></pre>
-<p> &amp;= \sum_{n}{(w * x + b - \hat{y}^n)^2}<br>\end{split}\end{equation}<br>$$</p>
+<li><p>定义一个合适的loss function来评价model的好坏（最小二乘法）：<br>$$<br>\begin{equation}\begin{split}<br>L(f)&amp;=L(w, b) \<br>&amp;= \sum_{n}{(f(x^n) - \hat{y}^n)^2} \<br>&amp;= \sum_{n}{(w * x + b - \hat{y}^n)^2}<br>\end{split}\end{equation}<br>$$</p>
 </li>
 </ul>
 </li>
@@ -266,12 +264,12 @@
 <ul>
 <li><p>选择最好的model </p>
 <p>确定了loss function后，我们需要利用微分以及线性代数的方法来挑选一个最好的model,</p>
-<img src="..\assets\3-weeks学习报告.assets\best-function.png" style="zoom:33%;" />
+<img src="..\assets\3-weeks学习报告.assets\best-function.png" style="zoom: 50%;" />
 
 <p>目前主要采用梯度下降（Gradient Descent）求解loss function的全局最优解，其余机器学习优化模型也是对Gradient Descent的改进和优化</p>
 <p><strong>梯度下降</strong></p>
 <p>本质内容就是高数中函数的微分求导，可以简化目标函数进行理解，例如一个二次凸函数，求解最小值时，我们求解的过程主要是：<br>$$<br>\begin{equation}\begin{split}<br>&amp;y = x^2 - 2x + 1 \<br>\Rightarrow &amp;y^1 = 2x - 2 \<br>\Rightarrow &amp;y^1 = 2*x -2 = 0 \<br>\Rightarrow &amp;x = 1<br>\end{split}\end{equation}<br>$$<br>梯度下降的意义就是loss function不断对参数微分，并对函数参数进行更新，最后寻找到loss function中的导数为0的最优点，下面是两参数（weight和bias）更新的过程:</p>
-<img src="..\assets\3-weeks学习报告.assets\gradient-descent.png" style="zoom:33%;" />
+<img src="..\assets\3-weeks学习报告.assets\gradient-descent.png" style="zoom: 50%;" />
 
 </li>
 </ul>
@@ -288,7 +286,7 @@
 <li>RNN</li>
 </ol>
 <h2 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h2><h3 id="Regression"><a href="#Regression" class="headerlink" title="Regression"></a>Regression</h3><h3 id="Logistic-Regression"><a href="#Logistic-Regression" class="headerlink" title="Logistic Regression"></a>Logistic Regression</h3><h3 id="Generative-model"><a href="#Generative-model" class="headerlink" title="Generative model"></a>Generative model</h3><h3 id="Convolutional-Neural-Network"><a href="#Convolutional-Neural-Network" class="headerlink" title="Convolutional Neural Network"></a>Convolutional Neural Network</h3><h3 id="Recurrent-Neural-Network"><a href="#Recurrent-Neural-Network" class="headerlink" title="Recurrent Neural Network"></a>Recurrent Neural Network</h3><h2 id="心路历程（ML–DL–ML）"><a href="#心路历程（ML–DL–ML）" class="headerlink" title="心路历程（ML–DL–ML）"></a>心路历程（ML–DL–ML）</h2><p>​    深度学习是比较迷茫的，不像以前学习Java Web一样，目前的学习方法主要是观看业界大佬视频、硬啃理论加实践书籍，在学习完一些理论知识，我甚至有些怀疑自己，我学习这个算法或者理论的作用是什么，后续抱着尝试的想法去实现李宏毅老师的作业，才发现是自己的知识和能力的不足，导致自己无法对Deep Learning深入了解，总结两个字，真香！</p>
-<p>​    深度学习或者机器学习的视频都比较乏味冗长，但我必须承认的是李宏毅老师讲的真好，强烈安利！跟着官方网站教程学习，讲到了RNN后，突然发现自己不知道该学习什么了，因为老师突然跳过了SVM、Word Emebedding等内容，在这时，<strong>统计学习方法</strong>打开了那久久不开的大门，这时才明白了机器学习基础的重要性，（不会吧，不会吧，谁不会觉得<strong>统计学习方法</strong>没用吧），综合某网某聘的工作要求<img src="..%5Cassets%5C3-weeks%E5%AD%A6%E4%B9%A0%E6%8A%A5%E5%91%8A.assets%5CSnipaste_2020-09-28_15-21-41.png"></p>
+<p>​    深度学习或者机器学习的视频都比较乏味冗长，但我必须承认的是李宏毅老师讲的真好，强烈安利！跟着官方网站教程学习，讲到了RNN后，突然发现自己不知道该学习什么了，因为老师突然跳过了SVM、Word Emebedding等内容，在这时，<strong>统计学习方法</strong>打开了那久久不开的大门，这时才明白了机器学习基础的重要性，（不会吧，不会吧，谁不会觉得<strong>统计学习方法</strong>没用吧），综合某网某聘的工作要求<img src="..\assets\3-weeks学习报告.assets\Snipaste_2020-09-28_15-21-41.png"  /></p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2>
       
 
