@@ -156,81 +156,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/29/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2020/09/29/hello-world/" class="archive-article-date">
-  	<time datetime="2020-09-29T08:46:03.381Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/09/29/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-3-weeks学习报告" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -256,23 +181,23 @@
 <li><p>定义一个model或者function set（Linear model线性模型 ）：</p>
 <p>$$<br>f = w * x + b = \sum^{}_{i}{w_i x_i}<br>$$</p>
 </li>
-<li><p>定义一个合适的loss function来评价model的好坏（最小二乘法）：<br>$$<br>\begin{equation}\begin{split}<br>L(f)&amp;=L(w, b) \<br>&amp;= \sum_{n}{(f(x^n) - \hat{y}^n)^2} \<br>&amp;= \sum_{n}{(w * x + b - \hat{y}^n)^2}<br>\end{split}\end{equation}<br>$$</p>
+<li><p>定义一个合适的loss function来评价model的好坏（最小二乘法）：<br>$$<br>\begin{equation}\begin{split}<br>&amp;y = x^2 - 2x + 1 \<br>\Rightarrow &amp;y^1 = 2x - 2 \<br>\Rightarrow &amp;y^1 = 2*x -2 = 0 \<br>\Rightarrow &amp;x = 1<br>\end{split}\end{equation}<br>$$</p>
+</li>
+<li><p>选择最好的model<br>确定了loss function后，我们需要利用微分以及线性代数的方法来挑选一个最好的model,</p>
 </li>
 </ul>
-</li>
-</ol>
-<ul>
-<li><p>选择最好的model </p>
-<p>确定了loss function后，我们需要利用微分以及线性代数的方法来挑选一个最好的model,</p>
 <img src="..\assets\3-weeks学习报告.assets\best-function.png" style="zoom: 50%;" />
 
 <p>目前主要采用梯度下降（Gradient Descent）求解loss function的全局最优解，其余机器学习优化模型也是对Gradient Descent的改进和优化</p>
 <p><strong>梯度下降</strong></p>
-<p>本质内容就是高数中函数的微分求导，可以简化目标函数进行理解，例如一个二次凸函数，求解最小值时，我们求解的过程主要是：<br>$$<br>\begin{equation}\begin{split}<br>&amp;y = x^2 - 2x + 1 \<br>\Rightarrow &amp;y^1 = 2x - 2 \<br>\Rightarrow &amp;y^1 = 2*x -2 = 0 \<br>\Rightarrow &amp;x = 1<br>\end{split}\end{equation}<br>$$<br>梯度下降的意义就是loss function不断对参数微分，并对函数参数进行更新，最后寻找到loss function中的导数为0的最优点，下面是两参数（weight和bias）更新的过程:</p>
+<p>本质内容就是高数中函数的微分求导，可以简化目标函数进行理解，例如一个二次凸函数，求解最小值时，我们求解的过程主要是：</p>
+<p>梯度下降的意义就是loss function不断对参数微分，并对函数参数进行更新，最后寻找到loss function中的导数为0的最优点，下面是两参数（weight和bias）更新的过程:</p>
+</li>
+</ol>
 <img src="..\assets\3-weeks学习报告.assets\gradient-descent.png" style="zoom: 50%;" />
 
-</li>
-</ul>
+
+<p>$$<br>\begin{equation}\begin{split}<br>L(f)&amp;=L(w, b) \<br>&amp;= \sum_{n}{(f(x^n) - \hat{y}^n)^2} \<br>&amp;= \sum_{n}{(w * x + b - \hat{y}^n)^2}<br>\end{split}\end{equation}<br>$$</p>
 <ol>
 <li>逻辑回归(Logistic Regression)</li>
 <li>Generative model</li>
