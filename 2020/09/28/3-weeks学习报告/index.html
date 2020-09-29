@@ -15,14 +15,14 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="周会总结–9月时间：9月14号~9月28号 学习任务 学习目标：机器学习、深度学习理论及实践 学习计划： Hung-yi Lee 深度学习视频 吴恩达机器学习视频 Hung-yi Lee作业实现 统计学习方法、深度学习（花书） pytorch 入门学习视频    学习过程中。。。机器学习（Machine Learning） 回归(Regression) 机器学习入门——预测离散值或者连续值的数值">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="f:/私人文件/学习/组会报告/3-weeks学习报告.assets/best-function.png">
-<meta property="og:image" content="f:/私人文件/学习/组会报告/3-weeks学习报告.assets/gradient-descent.png">
-<meta property="og:image" content="f:/私人文件/学习/组会报告/3-weeks学习报告.assets/Snipaste_2020-09-28_15-21-41.png">
+<meta property="og:image" content="f:/xiaobao/dazhu/blog/hexo_blog/source/assets/3-weeks学习报告.assets/best-function.png">
+<meta property="og:image" content="f:/xiaobao/dazhu/blog/hexo_blog/source/assets/3-weeks学习报告.assets/gradient-descent.png">
+<meta property="og:image" content="f:/xiaobao/dazhu/blog/hexo_blog/source/assets/3-weeks学习报告.assets/Snipaste_2020-09-28_15-21-41.png">
 <meta property="article:published_time" content="2020-09-28T08:07:24.311Z">
-<meta property="article:modified_time" content="2020-09-28T12:01:59.431Z">
+<meta property="article:modified_time" content="2020-09-29T09:46:28.989Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="f:/私人文件/学习/组会报告/3-weeks学习报告.assets/best-function.png">
+<meta name="twitter:image" content="f:/xiaobao/dazhu/blog/hexo_blog/source/assets/3-weeks学习报告.assets/best-function.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -197,12 +197,12 @@
 <ul>
 <li><p>选择最好的model </p>
 <p>确定了loss function后，我们需要利用微分以及线性代数的方法来挑选一个最好的model,</p>
-<img src="F:\私人文件\学习\组会报告\3-weeks学习报告.assets\best-function.png" style="zoom: 33%;" />
+<img src="F:\xiaobao\dazhu\blog\hexo_blog\source\assets\3-weeks学习报告.assets\best-function.png" style="zoom:33%;" />
 
 <p>目前主要采用梯度下降（Gradient Descent）求解loss function的全局最优解，其余机器学习优化模型也是对Gradient Descent的改进和优化</p>
 <p><strong>梯度下降</strong></p>
 <p>本质内容就是高数中函数的微分求导，可以简化目标函数进行理解，例如一个二次凸函数，求解最小值时，我们求解的过程主要是：<br>$$<br>\begin{equation}\begin{split}<br>&amp;y = x^2 - 2x + 1 \<br>\Rightarrow &amp;y^1 = 2x - 2 \<br>\Rightarrow &amp;y^1 = 2*x -2 = 0 \<br>\Rightarrow &amp;x = 1<br>\end{split}\end{equation}<br>$$<br>梯度下降的意义就是loss function不断对参数微分，并对函数参数进行更新，最后寻找到loss function中的导数为0的最优点，下面是两参数（weight和bias）更新的过程:</p>
-<img src="F:\私人文件\学习\组会报告\3-weeks学习报告.assets\gradient-descent.png" style="zoom: 33%;" />
+<img src="F:\xiaobao\dazhu\blog\hexo_blog\source\assets\3-weeks学习报告.assets\gradient-descent.png" style="zoom:33%;" />
 
 </li>
 </ul>
@@ -219,7 +219,7 @@
 <li>RNN</li>
 </ol>
 <h2 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h2><h3 id="Regression"><a href="#Regression" class="headerlink" title="Regression"></a>Regression</h3><h3 id="Logistic-Regression"><a href="#Logistic-Regression" class="headerlink" title="Logistic Regression"></a>Logistic Regression</h3><h3 id="Generative-model"><a href="#Generative-model" class="headerlink" title="Generative model"></a>Generative model</h3><h3 id="Convolutional-Neural-Network"><a href="#Convolutional-Neural-Network" class="headerlink" title="Convolutional Neural Network"></a>Convolutional Neural Network</h3><h3 id="Recurrent-Neural-Network"><a href="#Recurrent-Neural-Network" class="headerlink" title="Recurrent Neural Network"></a>Recurrent Neural Network</h3><h2 id="心路历程（ML–DL–ML）"><a href="#心路历程（ML–DL–ML）" class="headerlink" title="心路历程（ML–DL–ML）"></a>心路历程（ML–DL–ML）</h2><p>​    深度学习是比较迷茫的，不像以前学习Java Web一样，目前的学习方法主要是观看业界大佬视频、硬啃理论加实践书籍，在学习完一些理论知识，我甚至有些怀疑自己，我学习这个算法或者理论的作用是什么，后续抱着尝试的想法去实现李宏毅老师的作业，才发现是自己的知识和能力的不足，导致自己无法对Deep Learning深入了解，总结两个字，真香！</p>
-<p>​    深度学习或者机器学习的视频都比较乏味冗长，但我必须承认的是李宏毅老师讲的真好，强烈安利！跟着官方网站教程学习，讲到了RNN后，突然发现自己不知道该学习什么了，因为老师突然跳过了SVM、Word Emebedding等内容，在这时，<strong>统计学习方法</strong>打开了那久久不开的大门，这时才明白了机器学习基础的重要性，（不会吧，不会吧，谁不会觉得<strong>统计学习方法</strong>没用吧），综合某网某聘的工作要求<img src="F:\私人文件\学习\组会报告\3-weeks学习报告.assets\Snipaste_2020-09-28_15-21-41.png"></p>
+<p>​    深度学习或者机器学习的视频都比较乏味冗长，但我必须承认的是李宏毅老师讲的真好，强烈安利！跟着官方网站教程学习，讲到了RNN后，突然发现自己不知道该学习什么了，因为老师突然跳过了SVM、Word Emebedding等内容，在这时，<strong>统计学习方法</strong>打开了那久久不开的大门，这时才明白了机器学习基础的重要性，（不会吧，不会吧，谁不会觉得<strong>统计学习方法</strong>没用吧），综合某网某聘的工作要求<img src="F:\xiaobao\dazhu\blog\hexo_blog\source\assets\3-weeks学习报告.assets\Snipaste_2020-09-28_15-21-41.png"></p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2>
       
 
